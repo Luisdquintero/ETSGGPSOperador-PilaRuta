@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appetesg.estusolucionTranscarga.BrujulaActivity">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <ImageView
+        android:id="@+id/imgBrujula"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/compass" />
+
+    <TextView
+        android:id="@+id/lblGrados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgBrujula"
+        android:layout_alignStart="@+id/imgBrujula"
+        android:layout_below="@+id/imgBrujula"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="0º"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblOrientacion"
+
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblGrados"
+        android:layout_alignEnd="@+id/imgBrujula"
+        android:layout_alignRight="@+id/imgBrujula"
+        android:layout_below="@+id/imgBrujula"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="N"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textStyle="bold" />
+</RelativeLayout>

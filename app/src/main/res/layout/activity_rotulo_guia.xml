@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RotuloGuia">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+
+
+                <ImageButton
+                    android:id="@+id/regresar"
+                    android:layout_width="60dp"
+                    android:layout_height="49dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:translationZ="10dp"
+                    app:srcCompat="@drawable/ic_devolver"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/lytdesignRotulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtImpresionCiudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destino"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtCiudadDestinoImpresion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ciudad"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtImpresionPago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo de pago"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/lytdesignQR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:id="@+id/imgeImpresionQR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/qr_code" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- <TextView
+                 android:id="@+id/txtPesoG"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@id/edPesoEnvio"
+                 android:layout_centerHorizontal="true"
+                 android:textSize="40dp"
+                 android:text="4"/>-->
+
+            <ImageView
+                android:id="@+id/imgfondo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/imgEvidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="26dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imagenHistoricoRotulo"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/logoimpresion"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imgLogoRotulo"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/logoimpresion"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgRecogida"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/recogidas" />
+
+    <ImageView
+        android:id="@+id/imagenAlfanumericoHistoricoRotulo"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/alfanumerico2a"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/btnQrCliente"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/styel_button"
+            android:text="Compartir"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnQrCliente"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/btnimprimirRotulo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/styel_button"
+            android:text="TARJETA CLIENTE"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnreimpresion"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/botonesImp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/styel_button"
+            android:text="Re - Imprimir Guia"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnimprimirRotulo"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/btnreimpresion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/styel_button"
+            android:text="Imprimir Rotulo"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:id="@+id/botonesImp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="92dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

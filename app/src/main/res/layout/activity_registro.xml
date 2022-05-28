@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="com.appetesg.estusolucionTranscarga.RegistroActivity">
+
+    <ImageView
+        android:id="@+id/imageViewR"
+        android:layout_width="333dp"
+        android:layout_height="358dp"
+        android:layout_above="@+id/lblTipo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ic_launcher_js" />
+
+    <TextView
+        android:id="@+id/lblTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spIdentificacion"
+        android:layout_alignStart="@+id/spIdentificacion"
+        android:layout_marginBottom="-195dp"
+        android:text="Tipo de documento:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spIdentificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:hint="Seleccione*"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="195dp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/lblDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spIdentificacion"
+        android:layout_below="@+id/spIdentificacion"
+        android:text="Documento:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/txtDocumento"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/spIdentificacion"
+        android:layout_marginTop="48dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:hint="Documento*"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:inputType="number"
+        android:background="@drawable/style_ed"/>
+
+    <TextView
+        android:id="@+id/lblNombreR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtDocumento"
+        android:layout_below="@+id/txtDocumento"
+        android:text="Nombre:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/txtNombreR"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/lblNombreR"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:ems="10"
+        android:hint="Nombre*"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/style_ed"/>
+
+
+    <TextView
+        android:id="@+id/lblApellidoR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNombreR"
+        android:layout_below="@+id/txtNombreR"
+        android:text="Apellido:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtApellidoR"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/lblApellidoR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/style_ed"
+        android:ems="10"
+        android:hint="Apellido*"
+        android:inputType="textPersonName"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/lblCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtApellidoR"
+        android:layout_alignStart="@+id/txtApellidoR"
+        android:text="Celular:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/liCel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/lblCelular"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="95dp"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_ed"
+                android:inputType="none"
+                android:text="+57" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/txtCelularR"
+                android:layout_width="207dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/style_ed"
+                android:ems="10"
+                android:hint="celular*"
+                android:inputType="number"
+                android:padding="6dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegitroU"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/styel_button"
+        android:text="Registro"
+        android:textColor="#fff" />
+
+</RelativeLayout>

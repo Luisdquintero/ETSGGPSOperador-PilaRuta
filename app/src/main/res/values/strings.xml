@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SisColint</string>
+    <string name="BASE_URL">https://sisconet.co/zonacliente/Transcarga/WebService/General/Servicios/Mobile/Mobile.asmx</string>
+
+    <string name="BASE_URL2">https://sisconet.co/zonacliente/Transcarga/WebService/General/Servicios/Mobile/Mobile.asmx</string>
+    <string name="URL_GUIA_IMPRESION">web/modulos/Envios/</string>
+    <string name="SPREF">com.appetesg.estusolucionTranscarga.spref</string>
+    <string name="title_activity_main">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="title_activity_foto_ampliada">FotoAmpliada</string>
+    <string name="name_bd">Siscolint</string>
+    <string name="version_database">10</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="TerminosCondiciones">transcargamundial.com/terminosycondiciones</string>
+    <string name="Nombre_Compania">Transcarga Mundial</string>
+    <string name="versionApp">1.5.19C</string>
+    <string name="instalacionApp">https://sisconet.co/app/APPTCM.apk</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_ejemplo">ejemplo</string>
+    <string name="title_activity_lista_ciudades_cotizacion">ListaCiudadesCotizacion</string>
+    <string name="title_activity_tasa_volumetrica">TasaVolumetrica</string>
+    <string name="title_cookies">Cookies</string>
+    <string name="title_activity_lista_envios_prod">ListaEnviosProd</string>
+    <string name="title_activity_menu_logistica">MenuLogistica</string>
+    <string name="title_activity_impresion_rotulo">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

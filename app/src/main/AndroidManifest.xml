@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.appetesg.estusolucionTranscarga">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ImpresionRotulo"
+            android:label="@string/title_activity_impresion_rotulo"></activity>
+        <activity
+            android:name=".MenuLogistica"
+            android:label="@string/title_activity_menu_logistica"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ListaEnviosProd"
+            android:label="@string/title_activity_lista_envios_prod"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".utilidades.ImagePickerActivity"
+            android:label="Foto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListaEnvios"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaProductos"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".RotuloGuia"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".HistoricoGuia"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".TasaVolumetrica"
+            android:label="@string/title_activity_tasa_volumetrica"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListaCiudadesCotizacion"
+            android:label="@string/title_activity_lista_ciudades_cotizacion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GeneracionGuia"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ListaDestinatarios"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ejemplo"
+            android:label="@string/title_activity_ejemplo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listaClintesRemitente"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".AdicionarQRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AgendarHorarioActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListadoAgendaActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EscaneoCodigoActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaCumplidosActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ConfiguracionActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EstadosDialogoActivity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".ListaEstudiantes903Activity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaEstudiantes901Activity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaEstudiantes0Activity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".CargueActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaEstudiantes10Activity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaRutaActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".MenuRutaActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".servicios.MonitoreoService"
+            android:enabled="true"
+            android:launchMode="singleTop" />
+        <service
+            android:name=".servicios.LocationService"
+            android:enabled="true"
+            android:launchMode="singleTop" />
+        <service android:name=".servicios.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuActivity"
+            android:label=""
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapaServiciosActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity android:name=".BrujulaActivity" />
+        <activity
+            android:name=".PerfilActivity"
+            android:label="@string/title_activity_perfil"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ChatActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="base_localizacion.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value=".modelo_db.Monitoreo,.modelo_db.UsuariosColegio" />
+
+        <provider
+            android:name=".utilidades.DBContentProvider"
+            android:authorities="com.appetesg.estusolucionTranscarga"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".MainActivity" />
+        <receiver android:name=".receiver.GPSReceiver">
+            <intent-filter>
+                <action android:name="android.location.GPS_ENABLED_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".servicios.SisColintMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ServiciosActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaServiciosActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".Menuotros"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaChequeoActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListadoPreguntas"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListadoPreguntasPesv"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaDocumentosVehiculos"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".recordar_clave"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".cambio_clave"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".KilometrajeConductor"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaDocumentosVe"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".InsertarImagenDocumentoActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaFiltrosActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaFuecActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaPlacasActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".DatosReservaActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".RegistroActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaGuiasActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".EstadoGuiaActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".RegistroGuia"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".RegistroRemitente"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".RegistroDestinatario"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".firmaImagen"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ListaCiudadesD"
+            android:launchMode="singleInstance" />
+
+        <receiver
+            android:name=".receiver.Network"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

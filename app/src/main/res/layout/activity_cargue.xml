@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.appetesg.estusolucionTranscarga.AdicionarQRActivity">
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbar">
+
+    <TextView
+        android:id="@+id/lblestadoQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Region Distribucion - Entrega"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sprDestinos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblestadoQr"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/lblCargue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sprDestinos"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Nro. Cargue:"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/linearCargue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCargue"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Spinner
+            android:id="@+id/sprCargue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="3"
+            android:background="@color/colorAzul"
+            android:text="Buscar"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/lblContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearCargue"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine|textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="@color/colorborder"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblCantRotulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnLayout"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:inputType="textMultiLine|textCapCharacters"
+        android:textAlignment="center"
+        android:textColor="@color/colorborder"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lstGuias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblCantRotulos"
+        android:layout_below="@+id/lblContent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp" />
+
+    <LinearLayout
+        android:id="@+id/lnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAzul"
+            android:text="Limpiar"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnSubir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Cargar"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

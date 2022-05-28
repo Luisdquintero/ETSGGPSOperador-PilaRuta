@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="etiqueta">
+        <item name="background">@drawable/fondo_eti_fab</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="BackWhite" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroGuia">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageButton
+                android:id="@+id/btnReturnDesription"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_devolver" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtAlto"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="86dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Alto:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edAlto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/txtAlto"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/txtLargo"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/edAlto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Largo:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edLargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/txtLargo"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/txtAncho"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/edLargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Ancho:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edAncho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/txtAncho"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <!-- <TextView
+         android:id="@+id/txtPesoG"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/edPesoEnvio"
+         android:layout_centerHorizontal="true"
+         android:textSize="40dp"
+         android:text="4"/>-->
+
+    <TextView
+        android:id="@+id/txtCantidadCo"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/edAncho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cantidad:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edPiezasCo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/txtCantidadCo"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtVRCO"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/edPiezasCo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="VR. Declarado:"
+        android:textColor="@color/coloBlack"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edValorDeclaradoCo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVRCO"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/txtVRGCO"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_below="@+id/edValorDeclaradoCo"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"/>
+
+    <Button
+        android:id="@+id/btnContinuarG1"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/styel_button"
+        android:text="Cotizacion"
+        android:textColor="#fff" />
+
+</RelativeLayout>

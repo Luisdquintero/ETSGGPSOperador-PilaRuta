@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaDestinatarios">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:weightSum="100">
+
+
+        <TextView
+            android:id="@+id/textViewD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destinatario"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginLeft="26dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDestinario"
+            android:drawableRight="@drawable/icon_play_edittext"
+            android:layout_below="@+id/textViewD"
+            android:hint="Destinatario"
+            android:paddingRight="10dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20">
+            <ListView
+                android:id="@+id/lstDestinarios"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_listview">
+            </ListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_add"
+        app:menu_fab_label="Menu">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btnNuevoDest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fab_label="Nuevo Destinatario"
+            android:src="@drawable/cliente">
+
+        </com.github.clans.fab.FloatingActionButton>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

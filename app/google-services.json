@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1059958119976",
+    "firebase_url": "https://siscolint-jab.firebaseio.com",
+    "project_id": "siscolint-jab",
+    "storage_bucket": "siscolint-jab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059958119976:android:40a1ef9693d8719bf85f1d",
+        "android_client_info": {
+          "package_name": "com.appetesg.estusolucionTranscarga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059958119976-iat3lij6n2k2ci5b3hjcmv6i94ktp5m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGI99WudpoefxcMsVzHBymWwlEIErbCeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059958119976-iat3lij6n2k2ci5b3hjcmv6i94ktp5m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoricoGuia">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:weightSum="100">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guia"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="26dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edGuiaConsulta"
+            android:drawableRight="@drawable/icon_play_edittext"
+            android:layout_below="@+id/textView3"
+            android:hint="Guia"
+            android:paddingRight="10dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="26dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="18">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ftbGuia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="100dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/places_ic_search"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ListView
+                android:id="@+id/lstGuiasHistorico"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider_listview">
+
+            </ListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imagenHistorico"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/logoimpresion"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imagenAlfanumericoHistorico"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/alfanumerico2a"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

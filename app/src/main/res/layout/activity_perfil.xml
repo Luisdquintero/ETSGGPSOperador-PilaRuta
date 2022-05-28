@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e1e6"
+    tools:context=".PerfilActivity">
+
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <!--<ImageView
+        android:id="@+id/imageViewReg"
+        android:layout_width="291dp"
+        android:layout_height="205dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/logo" />-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imageFotoPer"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnActualizarP"
+        android:layout_below="@+id/imageFotoPer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/styel_button" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageFotoPer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_camara_white"
+        app:civ_border_color="@color/colorwhite"
+        app:civ_border_width="4dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/txtOficina"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Oficina"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="9sp" />
+
+    <ImageView
+        android:id="@+id/imageViewSeparator4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtOficina"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:drawable/divider_horizontal_dark" />
+
+    <EditText
+        android:id="@+id/txtNombreApp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtOficina"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Nombre*"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtApellidoApp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtNombreApp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Apellido*"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtEmailApp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtApellidoApp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtDocumentoApp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtEmailApp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Documento"
+        android:inputType="number"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/txtCelularApp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtDocumentoApp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="number"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/btnCamaraP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="109dp"
+        android:src="@drawable/ic_camara_white"
+        android:visibility="gone"
+        app:fab_label="Nuevo Cliente">
+
+    </com.github.clans.fab.FloatingActionButton>
+
+    <Button
+        android:id="@+id/btnActualizarP"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/styel_button"
+        android:text="Actualizar"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/lblVersionP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+</RelativeLayout>

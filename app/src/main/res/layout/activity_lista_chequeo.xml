@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appetesg.estusolucionTranscarga.ListaChequeoActivity">
+
+    <TextView
+        android:id="@+id/lblSi4"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_toStartOf="@+id/lblNo"
+        android:gravity="center"
+        android:text="Cumple"
+
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </include>
+
+    <TextView
+        android:id="@+id/lblNo"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_alignEnd="@+id/btnValidar"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:text="No Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <RadioGroup
+        android:id="@+id/rgRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblNo"
+        android:layout_below="@+id/lblSi4"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <RadioButton
+            android:id="@+id/rbSi"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rbNo"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblTecnomecanica"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_alignBottom="@+id/rgRadio"
+        android:layout_toStartOf="@+id/lblSi4"
+        android:gravity="left"
+        android:text="¿Cumple con verificación sistema frenos?"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgRadio"
+        android:background="#000"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/lblPreventiva"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/lblCumplesi2"
+        android:layout_toStartOf="@+id/lblSi4"
+        android:gravity="left"
+        android:text="¿Cumple con verificación sistema luces?"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblCumplesi2"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+        android:layout_alignStart="@+id/lblSi4"
+
+        android:layout_below="@+id/rgRadio"
+        android:gravity="center"
+        android:text="Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblCumpleno2"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/lblCumplesi2"
+        android:layout_toEndOf="@+id/lblSi4"
+        android:gravity="center"
+        android:text="No Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPreventiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblNo"
+        android:layout_alignTop="@+id/lblPreventiva"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <RadioButton
+            android:id="@+id/rbPreventivaSi"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rbPreventivaNo"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgPreventiva"
+        android:background="#000"
+        android:orientation="horizontal" />
+
+
+    <TextView
+        android:id="@+id/lblSoat"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@+id/rgSOAT"
+        android:layout_toStartOf="@+id/lblSi4"
+        android:gravity="left"
+        android:text="¿Cumple con niveles motor?"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblSoatsi2"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+        android:layout_alignStart="@+id/lblSi4"
+
+        android:layout_below="@+id/rgPreventiva"
+        android:gravity="center"
+        android:text="Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblSoatno2"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/lblSoatsi2"
+        android:layout_toEndOf="@+id/lblSi4"
+        android:gravity="center"
+        android:text="No Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rgSOAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblNo"
+        android:layout_below="@+id/lblSoatsi2"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <RadioButton
+            android:id="@+id/rbSoatSi"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rbSoatNo"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgSOAT"
+        android:background="#000"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/lbllantas"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="173dp"
+        android:layout_toStartOf="@+id/rgRadio"
+        android:gravity="left"
+        android:text="¿Las llantas están en buen uso?"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblLlantasi2"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+
+        android:layout_alignStart="@+id/lblSi4"
+        android:layout_below="@+id/rgSOAT"
+        android:gravity="center"
+        android:text="Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblLlantas2"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/lblLlantasi2"
+        android:layout_toEndOf="@+id/lblSi4"
+        android:gravity="center"
+        android:text="No Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <RadioGroup
+        android:id="@+id/rgLlantas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblNo"
+        android:layout_below="@+id/lblCarreterai2"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <RadioButton
+            android:id="@+id/rbLlantasSi"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rbLlantasNo"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgCarretera"
+        android:background="#000"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/lbCarretera"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@+id/rgCarretera"
+        android:layout_toStartOf="@+id/lblSi4"
+        android:gravity="left"
+        android:text="¿Cumple con el equipo de carretera?"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblCarreterai2"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+
+        android:layout_alignStart="@+id/lblSi4"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <TextView
+        android:id="@+id/lblCarretera2"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/lblCarreterai2"
+        android:layout_toEndOf="@+id/lblSi4"
+        android:gravity="center"
+        android:text="No Cumple"
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <RadioGroup
+        android:id="@+id/rgCarretera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lblNo"
+        android:layout_below="@+id/lblLlantasi2"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <RadioButton
+            android:id="@+id/rbCarreteraSi"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rbCarreterao"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="128dp"
+        android:background="#000"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Validar"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appetesg.estusolucionTranscarga.ListadoPreguntas">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rlTemp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/toolbar"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Cual es tu temperatura corporal?"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+    </RelativeLayout>
+    -->
+    <ListView
+        android:id="@+id/itemsPreguntas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnEnviarRespuestas"
+        android:layout_below="@id/toolbar"
+        android:divider="@color/material_blue_grey_800"
+        android:dividerHeight="1dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnEnviarRespuestas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_rounded"
+        android:text="Enviar"
+        android:textColor="#ffff" />
+
+
+</RelativeLayout>

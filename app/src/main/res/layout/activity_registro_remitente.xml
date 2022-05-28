@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegistroRemitente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageButton
+                android:id="@+id/btnReturnDesription"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_devolver" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titlefachada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="26dp"
+        android:text="Remitente:"
+        android:textColor="@color/coloBlack"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtClientesDes"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Tipo De Documento:"
+                android:textColor="@color/coloBlack"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/lstDocumento"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/txtClientesDes"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/txtDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Nro. Documento"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/txtNombreCli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCompanhiaRem"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:hint="Nombre"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/txtApellidoCli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNombreCli"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:hint="Apellido"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/txtCompaniaCli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtApellidoCli"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:hint="Compañia"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/txtDirCli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCompaniaCli"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:hint="Direccion"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/txtEmailCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDirCli"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:backgroundTint="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/txtCelularCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmailCliente"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="Celular"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <EditText
+                android:id="@+id/etCiudadDe4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:drawableRight="@drawable/icon_play_edittext"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Ciudad"
+                android:paddingRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_weight="20">
+
+                <ListView
+                    android:id="@+id/lstCiudadDest"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"></ListView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnContinuarG2"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/styel_button"
+                android:text="Continuar"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnActualizarC"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/styel_button"
+                android:text="Editar"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

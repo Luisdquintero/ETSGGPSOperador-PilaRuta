@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneracionGuia">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imgEvidenciaC"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressC"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="8dp">
+
+            <ImageButton
+                android:id="@+id/btnRetornoF"
+                android:layout_width="60dp"
+                android:layout_height="49dp"
+                android:background="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/ic_devolver" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/lytdesign"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="86dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtImpresionCiudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ciudad destino"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtImpresionPedido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nro. guia"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtImpresionPago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo de pago"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:id="@+id/imgeImpresionQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        app:srcCompat="@drawable/qr_code" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. de pedido"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginRight="26dp"
+                android:textColor="@color/coloBlack"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edNoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtContenido"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Opcional"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/txtForma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:text="Forma De Pago:"
+                android:textColor="@color/coloBlack"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/lstFormaPago"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/txtForma"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/txtContenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lstFormaPago"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:text="Contenido:"
+                android:textColor="@color/coloBlack"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edContenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtContenido"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+            <!-- <TextView
+         android:id="@+id/txtPesoG"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/edPesoEnvio"
+         android:layout_centerHorizontal="true"
+         android:textSize="40dp"
+         android:text="4"/>-->
+
+            <TextView
+                android:id="@+id/txtObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edContenido"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:text="Observaciones:"
+                android:textColor="@color/coloBlack"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edObservaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtObservaciones"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/imgfondo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/imgEvidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edObservaciones"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="26dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/btnCamaraE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="59dp"
+        android:src="@drawable/ic_camara_white"
+        app:fab_label="Nuevo Cliente">
+
+    </com.github.clans.fab.FloatingActionButton>
+
+    <ImageView
+        android:id="@+id/imagenRegistro"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/logoimpresion"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imagenAlfanumerico"
+        android:layout_width="233dp"
+        android:layout_height="258dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/alfanumerico2a"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnimprimir"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/styel_button"
+        android:text="Imprimir"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/styel_button"
+        android:text="Guardar"
+        android:textColor="#fff" />
+
+</RelativeLayout>

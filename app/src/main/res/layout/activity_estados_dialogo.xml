@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.appetesg.estusolucionTranscarga.EstadosDialogoActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/lblTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="12dp"
+        android:gravity="center_horizontal"
+        android:text="Cambiar estado de: " />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/sprEstados"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCambiarEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="#fff"
+            android:layout_centerInParent="true"
+            android:text="Cambiar estado" />
+    </RelativeLayout>
+</LinearLayout>
